@@ -7,9 +7,24 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="app">
+
+    <div class="container">
+
         
-        <index-component testdata="testing"/>
+       <div class="mt-3  ">
+            <a class="btn btn-success"  href="{{ url('/test/pdf') }}" target="_blank" >Check Snappy PDF</a>
+            <a class="btn btn-info"  href="{{ url('/test/ldap') }}" target="_blank" >Check LDAP Connection</a>
+            <a class="btn btn-warning"  href="{{ url('/test/oracle') }}" target="_blank" >Check Oracle Connection</a>
+             <a class="btn btn-secondary"  href="{{ url('/test/phpinfo') }}" target="_blank" >Check PHP Info</a>
+            <div>Laravel Version: {{ App::VERSION() }}. PHP Version: {{ phpversion() }} </div>
+       </div>
+
+        <hr>
+
+        <div id="app">
+            <index-component testdata="testing"/>
+        </div>
+
     </div>
 
     @vite('resources/js/Project/User/js/app.js')

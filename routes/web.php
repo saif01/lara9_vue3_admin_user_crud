@@ -20,24 +20,14 @@ use Illuminate\Support\Facades\Route;
 Route::namespace('App\Http\Controllers')->group(function(){
 
 
-    // Auth 
-    Route::namespace('Auth')->group(function(){
+   // Test
+    Route::namespace('Test')->prefix('test')->group(function(){
 
-        // Route::get('/login', 'IndexController@login')->name('login');
-        Route::post('/login_action', 'LoginController@login_action');
-        Route::get('/logout', 'LoginController@logout');
-
-        Route::post('/register_check', 'RegisterController@check');
-        Route::post('/register_store', 'RegisterController@store');
-
-        Route::get('/test', 'Common\Log@test'); 
-        Route::get('login/{any?}', 'IndexController@index')->name('login');
-        Route::get('register/{any?}', 'IndexController@index')->name('register');
-        // user-manuals
-        Route::get('/user-manuals', 'IndexController@userManuals');
-        // auth_check
-        Route::get('/auth_check', 'IndexController@auth_check');
-
+        Route::get('/', 'IndexController@index');
+        Route::get('/pdf', 'IndexController@pdf');
+        Route::get('/ldap', 'IndexController@ldap');
+        Route::get('/oracle', 'IndexController@oracle');
+        Route::get('/phpinfo', 'IndexController@phpinfo');
     });
 
 

@@ -1,11 +1,10 @@
 <template>
   <div>
-    <h1>This is dashboard</h1>
-    <v-card class="mx-auto" max-width="344">
+    <h1 class="text-center">This is dashboard Vue Js 3</h1>
+    <v-card class="mx-auto" max-width="auto">
       <v-card-text>
-        <div>Word of the Day</div>
-        <p class="text-h4 text--primary">el·ee·mos·y·nar·y</p>
-        <p>adjective</p>
+        <h3>I am Vuetify 3 component</h3>
+
         <div class="text--primary">
           relating to or dependent on charity; charitable.
           <br />"an eleemosynary educational institution."
